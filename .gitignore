@@ -1,0 +1,13 @@
+# Dependencies & Logs
+node_modules/
+*.log
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Local Server temporary files
+.history/
+.vscode/*
+!.vscode/extensions.json

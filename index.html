@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Dev | Portfolio & Engineering Showcase</title>
+  
+  <!-- SEO & OpenGraph Meta Tags -->
+  <meta name="description" content="High-performance developer portfolio and cloud engineering showcase designed for testing deployment on modern Chrome and web platforms.">
+  <meta name="keywords" content="portfolio, web developer, cloud engineer, full stack, chrome app, PWA, frontend, backend">
+  <meta name="author" content="Festus O.">
+  <meta property="og:title" content="Apex Dev | Portfolio & Engineering Showcase">
+  <meta property="og:description" content="Aesthetic, high-performance portfolio webapp optimized for Chrome deployment testing.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="./assets/images/project-cloud.jpg">
+  
+  <!-- Favicon & PWA Manifest -->
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="apple-touch-icon" href="./favicon.svg">
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#08090e">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Ambient Floating Background Mesh -->
+  <div class="bg-ambient" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="bg-grid"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="#hero" class="brand-logo" id="brand-logo" aria-label="Apex Developer Portfolio Home">
+          <span class="logo-badge">A</span>
+          <span>Apex<span class="gradient-text">.Dev</span></span>
+        </a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about" class="nav-link" id="nav-link-about">About</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-link-skills">Skills</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+          <li><a href="#deploy-hub" class="nav-link" id="nav-link-deploy">Chrome Deploy Hub</a></li>
+          <li><a href="#experience" class="nav-link" id="nav-link-experience">Timeline</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-link-contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <div class="deploy-status-pill" id="nav-status-pill" title="Deployment App Health">
+            <span class="status-dot"></span>
+            <span id="nav-status-text">Chrome Ready</span>
+          </div>
+
+          <!-- Theme Toggle -->
+          <button class="btn-icon" id="theme-toggle" aria-label="Toggle light or dark theme" title="Toggle Theme">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+            </svg>
+          </button>
+
+          <!-- Mobile Menu Toggle Button -->
+          <button class="btn-icon mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="ping" aria-hidden="true"></span>
+              <span>Available for Architecture & Engineering Projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              Engineering Next-Gen <br>
+              <span class="gradient-text">Cloud & Web Platforms</span>
+            </h1>
+
+            <p class="hero-subtitle">
+              Specialized as a <strong class="code-font" id="typing-role">Full-Stack Systems Architect</strong><span class="typing-cursor">|</span> crafting resilient distributed architectures, sleek interactive web apps, and automated pipelines.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary" id="btn-hero-projects">
+                <span>View Projects</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+              <a href="#deploy-hub" class="btn btn-secondary" id="btn-hero-deploy">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                <span>Chrome Deploy Hub</span>
+              </a>
+              <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Get in Touch</a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-value">99.99%</span>
+                <span class="stat-label">System Reliability</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">15+</span>
+                <span class="stat-label">Cloud Apps Deployed</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">&lt; 120ms</span>
+                <span class="stat-label">P99 Latency Target</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Right: Interactive Environment Card -->
+          <div class="hero-visual">
+            <div class="glass-card-hero">
+              <div class="card-topbar">
+                <div class="window-dots">
+                  <span class="window-dot dot-red"></span>
+                  <span class="window-dot dot-yellow"></span>
+                  <span class="window-dot dot-green"></span>
+                </div>
+                <span class="badge badge-brand">chrome-env // active</span>
+              </div>
+
+              <div class="tech-spec-list">
+                <div class="spec-row">
+                  <span class="spec-key">Runtime Target</span>
+                  <span class="spec-val">Chrome 120+ / Modern Web</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Core Engine</span>
+                  <span class="spec-val">HTML5 • Modern CSS3 • ES6+</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Deployment Mode</span>
+                  <span class="spec-val">Standalone PWA / Static Hosting</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-key">Service Worker</span>
+                  <span class="spec-val" style="color: var(--accent-emerald);">Active (Stale-While-Revalidate)</span>
+                </div>
+              </div>
+
+              <div class="code-snippet-box">
+<span style="color: var(--accent-purple);">const</span> apex = <span style="color: var(--accent-indigo);">new</span> Engineer({
+  name: <span style="color: #34d399;">'Festus O.'</span>,
+  focus: [<span style="color: #38bdf8;">'Cloud'</span>, <span style="color: #38bdf8;">'Full-Stack'</span>, <span style="color: #38bdf8;">'DevOps'</span>],
+  status: <span style="color: #34d399;">'Ready for Deployment'</span>
+});
+<span style="color: var(--text-muted);">// Ready to launch on Chrome</span>
+apex.deploy({ target: <span style="color: #38bdf8;">'production'</span> });
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 01. Foundations</span>
+          <h2 class="section-title">Architected for Speed & Reliability</h2>
+          <p class="section-desc">Building scalable, resilient software systems where clean code meets modern aesthetics and robust cloud infrastructure.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 style="font-size: 1.8rem; margin-bottom: 12px;">Bridging High-Performance Web with Cloud Infrastructure</h3>
+            <p>I design and build end-to-end web applications with a focus on performance, fault tolerance, and developer experience. From crafting responsive user interfaces with zero-dependency CSS to provisioning event-driven cloud backends, every layer is engineered with intent.</p>
+            <p>This web application is structured to test seamlessly across modern Chrome browsers, local development servers (Five Server, Live Server), and cloud static deployment platforms (Vercel, Netlify, Firebase Hosting, Cloudflare Pages).</p>
+            <div>
+              <a href="#contact" class="btn btn-primary btn-sm">Let's Connect</a>
+            </div>
+          </div>
+
+          <div class="about-features">
+            <div class="feature-box">
+              <div class="feature-icon">⚡</div>
+              <h4>Performance First</h4>
+              <p>Zero bloated libraries. Pure modern web APIs that load instantaneously with near-perfect Lighthouse scores.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon">🛡️</div>
+              <h4>Resilient Design</h4>
+              <p>Offline-ready service worker caching, safe fallbacks, and comprehensive deployment health indicators.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon">🎨</div>
+              <h4>Modern Aesthetics</h4>
+              <p>Curated color system, glassmorphism, responsive fluid typography, and dark/light mode parity.</p>
+            </div>
+            <div class="feature-box">
+              <div class="feature-icon">☁️</div>
+              <h4>Cloud Native</h4>
+              <p>Designed with containerization, API-first integrations, and cross-platform Chrome PWA standards in mind.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 02. Technical Arsenal</span>
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-desc">Tools and frameworks utilized to construct high-concurrency systems and modern web interfaces.</p>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skills-categories">
+            <!-- Category 1: Frontend & Web -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                </div>
+                <h3>Frontend & UI</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5 & Semantic Web</span>
+                <span class="skill-tag">Vanilla Modern CSS3</span>
+                <span class="skill-tag">JavaScript (ES2024+)</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">React / Next.js</span>
+                <span class="skill-tag">PWA & Service Workers</span>
+                <span class="skill-tag">Web Components</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+
+            <!-- Category 2: Backend & Systems -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon" style="background: linear-gradient(135deg, #10b981, #06b6d4);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+                </div>
+                <h3>Backend & APIs</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python & FastAPI</span>
+                <span class="skill-tag">Go (Golang)</span>
+                <span class="skill-tag">PostgreSQL</span>
+                <span class="skill-tag">Redis Caching</span>
+                <span class="skill-tag">REST & GraphQL</span>
+                <span class="skill-tag">gRPC & WebSockets</span>
+                <span class="skill-tag">JWT / OAuth2</span>
+              </div>
+            </div>
+
+            <!-- Category 3: Cloud & Deployment -->
+            <div class="skill-category-card">
+              <div class="category-header">
+                <div class="category-icon" style="background: linear-gradient(135deg, #8b5cf6, #f43f5e);">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+                </div>
+                <h3>Cloud & DevOps</h3>
+              </div>
+              <div class="skill-tags">
+                <span class="skill-tag">Google Cloud (GCP)</span>
+                <span class="skill-tag">Docker Containers</span>
+                <span class="skill-tag">Kubernetes</span>
+                <span class="skill-tag">CI/CD Workflows</span>
+                <span class="skill-tag">Firebase Hosting</span>
+                <span class="skill-tag">Vercel / Netlify</span>
+                <span class="skill-tag">Prometheus & Grafana</span>
+                <span class="skill-tag">Git Version Control</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 03. Selected Works</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">Production applications showcasing end-to-end architecture, user experience, and scalability.</p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all" id="filter-all" role="tab" aria-selected="true">All Systems</button>
+          <button class="filter-btn" data-filter="cloud" id="filter-cloud" role="tab" aria-selected="false">Cloud & DevOps</button>
+          <button class="filter-btn" data-filter="fullstack" id="filter-fullstack" role="tab" aria-selected="false">AI & Full-Stack</button>
+          <button class="filter-btn" data-filter="fintech" id="filter-fintech" role="tab" aria-selected="false">Fintech & Web3</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          <!-- Dynamically populated by js/app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Chrome Deployment & Health Test Hub Section -->
+    <section class="deploy-hub-section" id="deploy-hub">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 04. Deployment & Testing</span>
+          <h2 class="section-title">Chrome Deployment Health Hub</h2>
+          <p class="section-desc">Real-time diagnostics designed to verify your app's performance, service worker caching, and Chrome PWA installability.</p>
+        </div>
+
+        <div class="deploy-hub-grid">
+          <!-- Left: Realtime Diagnostics -->
+          <div class="diagnostics-panel">
+            <div class="panel-header">
+              <h3 style="font-size: 1.3rem;">Browser Environment Diagnostics</h3>
+              <span class="badge badge-brand">Live Inspector</span>
+            </div>
+
+            <div class="diag-list">
+              <div class="diag-item">
+                <div class="diag-info">
+                  <span class="diag-icon">⚡</span>
+                  <div>
+                    <div class="diag-title">Service Worker Cache</div>
+                    <div class="diag-sub">Offline asset caching & fetch interceptor</div>
+                  </div>
+                </div>
+                <span class="diag-value val-success" id="diag-sw-status">CHECKING...</span>
+              </div>
+
+              <div class="diag-item">
+                <div class="diag-info">
+                  <span class="diag-icon">📱</span>
+                  <div>
+                    <div class="diag-title">PWA Installability</div>
+                    <div class="diag-sub">Chrome Add to Desktop / App Mode</div>
+                  </div>
+                </div>
+                <span class="diag-value val-success" id="diag-pwa-status">STANDBY</span>
+              </div>
+
+              <div class="diag-item">
+                <div class="diag-info">
+                  <span class="diag-icon">🌐</span>
+                  <div>
+                    <div class="diag-title">Network Connectivity</div>
+                    <div class="diag-sub">navigator.onLine event listener</div>
+                  </div>
+                </div>
+                <span class="diag-value val-success" id="diag-network-status">ONLINE</span>
+              </div>
+
+              <div class="diag-item">
+                <div class="diag-info">
+                  <span class="diag-icon">🔒</span>
+                  <div>
+                    <div class="diag-title">Protocol Security</div>
+                    <div class="diag-sub">HTTPS / Localhost origin validation</div>
+                  </div>
+                </div>
+                <span class="diag-value val-success" id="diag-protocol-status">HTTP</span>
+              </div>
+
+              <div class="diag-item">
+                <div class="diag-info">
+                  <span class="diag-icon">📐</span>
+                  <div>
+                    <div class="diag-title">Viewport & Resolution</div>
+                    <div class="diag-sub">Responsive window metrics</div>
+                  </div>
+                </div>
+                <span class="diag-value" id="diag-viewport-status" style="background: rgba(255, 255, 255, 0.08); color: var(--text-primary);">1920×1080</span>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
+              <button class="btn btn-primary btn-sm" id="pwa-install-trigger" style="display: none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                <span>Install Chrome App</span>
+              </button>
+              <button class="btn btn-secondary btn-sm" id="btn-simulate-offline">
+                Simulate Offline Mode
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Deployment Checklist & Guide -->
+          <div class="deploy-guide-box">
+            <h3 style="font-size: 1.3rem;">Testing & Deployment Checklist</h3>
+            <p style="font-size: 0.95rem;">This portfolio is engineered with standard web components (HTML/CSS/JS) with zero build tools required. It deploys out-of-the-box anywhere:</p>
+
+            <div class="deploy-step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h4>Local Chrome Testing with Five Server</h4>
+                <p>Run Five Server (recommended in your VS Code) or Python <code>python -m http.server 8080</code>. Open Chrome at <code>http://localhost:8080</code>.</p>
+              </div>
+            </div>
+
+            <div class="deploy-step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h4>GitHub Pages / Vercel / Netlify Deployment</h4>
+                <p>Simply drag and drop this project folder or push to a Git repository. No build command is needed; set the publish directory to root (<code>./</code>).</p>
+              </div>
+            </div>
+
+            <div class="deploy-step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h4>Chrome App / PWA Installation</h4>
+                <p>In Chrome, look for the install icon in the address bar (or click "Install Chrome App" above) to run this portfolio in dedicated windowed standalone mode.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience & Timeline Section -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 05. Milestones</span>
+          <h2 class="section-title">Experience & Journey</h2>
+          <p class="section-desc">Key engineering roles and impactful technical contributions.</p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-role">Lead Systems Architect</span>
+                <span class="timeline-date">2024 - PRESENT</span>
+              </div>
+              <div class="timeline-company">Apex Cloud Technologies • Global</div>
+              <p>Spearheaded migration of legacy monolith to containerized microservices on Kubernetes, reducing cloud infrastructure spend by 34% and improving API latency to sub-100ms.</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-role">Senior Full-Stack Engineer</span>
+                <span class="timeline-date">2022 - 2024</span>
+              </div>
+              <div class="timeline-company">Pulse FinTech Labs • Remote</div>
+              <p>Designed and launched an international remittance dashboard handling $12M+ monthly transaction volume. Implemented real-time WebSockets trade streaming with zero packet loss.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <span class="timeline-role">Software Engineer</span>
+                <span class="timeline-date">2020 - 2022</span>
+              </div>
+              <div class="timeline-company">DevStream Solutions • New York</div>
+              <p>Engineered core user analytics pipelines and responsive UI libraries in React and modern CSS, improving developer velocity and end-user engagement metrics by 45%.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">// 06. Communication</span>
+          <h2 class="section-title">Let's Build Something Exceptional</h2>
+          <p class="section-desc">Have an upcoming cloud migration, application idea, or want to discuss full-stack architecture? Reach out below.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left: Direct Details -->
+          <div class="contact-info">
+            <h3 style="font-size: 1.6rem;">Direct Channels</h3>
+            <p>I am always open to discussing new opportunities, high-throughput system designs, and collaborative engineering endeavors.</p>
+
+            <div class="contact-card">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Email Address</div>
+                <div style="font-weight: 600; color: var(--text-primary);">festus.engineering@example.com</div>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">📍</div>
+              <div>
+                <div style="font-size: 0.85rem; color: var(--text-muted);">Location</div>
+                <div style="font-weight: 600; color: var(--text-primary);">Global Remote / Hybrid</div>
+              </div>
+            </div>
+
+            <div style="display: flex; gap: 12px; margin-top: 8px;">
+              <button class="btn btn-secondary btn-sm" id="btn-copy-email">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span>Copy Email</span>
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form -->
+          <div class="form-box">
+            <form id="contact-form" autocomplete="on">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" class="form-input" placeholder="Project Inquiry / Cloud Architecture" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" class="form-textarea" placeholder="Tell me about your project, timeline, or requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;" id="btn-submit-contact">
+                <span>Send Message</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Detail Modal (<dialog>) -->
+  <dialog id="project-modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <img id="modal-img" src="" alt="Project Visual Preview">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">✕</button>
+    </div>
+    <div class="modal-body">
+      <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+        <span class="badge badge-brand" id="modal-badge">Category</span>
+        <span class="code-font" id="modal-metrics" style="font-size: 0.85rem; color: var(--accent-cyan);">Metrics</span>
+      </div>
+
+      <h2 id="modal-title" style="font-size: 1.8rem;">Project Title</h2>
+      <p id="modal-desc" style="font-size: 1rem; line-height: 1.7;">Detailed description.</p>
+
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Architecture & Systems</h4>
+        <p id="modal-arch" style="font-size: 0.92rem; color: var(--text-secondary);"></p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 0.95rem; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">Technologies Used</h4>
+        <div id="modal-tech" class="project-tech"></div>
+      </div>
+
+      <div class="modal-actions">
+        <a href="#" class="btn btn-primary btn-sm" id="modal-live-link">
+          <span>Live Demo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" id="modal-repo-link">
+          <span>Source Code</span>
+        </a>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Toast Container -->
+  <div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div>
+          <div style="font-weight: 700; font-size: 1.1rem; margin-bottom: 4px;">Apex Developer Portfolio</div>
+          <div style="font-size: 0.85rem; color: var(--text-muted);">Engineered for Chrome deployment testing & modern static web performance.</div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#hero">Top</a>
+          <a href="#projects">Projects</a>
+          <a href="#deploy-hub">Diagnostics</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div style="margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--border-subtle); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 0.8rem; color: var(--text-muted);">
+        <span>© 2026 Festus O. All rights reserved.</span>
+        <span>Built with Semantic HTML5, Vanilla CSS3, & Modern JavaScript.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Script -->
+  <script src="./js/app.js"></script>
+</body>
+</html>
