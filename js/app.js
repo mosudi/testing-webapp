@@ -19,7 +19,7 @@ const PROJECTS_DATA = [
     architecture: 'Microservices architecture coordinated via gRPC and Redis Pub/Sub, deployed across multi-zone Kubernetes clusters.',
     metrics: '99.99% Telemetry Uptime • 112ms Max Latency • 50+ Microservices',
     liveUrl: '#',
-    repoUrl: 'https://github.com/'
+    repoUrl: 'https://github.com/mosudi/testing-webapp'
   },
   {
     id: 'synapse-ai',
@@ -33,7 +33,7 @@ const PROJECTS_DATA = [
     architecture: 'Edge-rendered frontend with bidirectional WebSocket streaming to an asynchronous Python AI inference pipeline.',
     metrics: 'Sub-20ms Token Time • 40+ Language Parsers • 10k Active Queries',
     liveUrl: '#',
-    repoUrl: 'https://github.com/'
+    repoUrl: 'https://github.com/mosudi/testing-webapp'
   },
   {
     id: 'pulsepay-fintech',
@@ -47,7 +47,7 @@ const PROJECTS_DATA = [
     architecture: 'Event-sourced ledger pattern with distributed consensus and double-entry bookkeeping validation.',
     metrics: '< 1s FX Settlement • Zero Ledger Discrepancies • 180+ Countries',
     liveUrl: '#',
-    repoUrl: 'https://github.com/'
+    repoUrl: 'https://github.com/mosudi/testing-webapp'
   }
 ];
 
@@ -496,7 +496,7 @@ function setupContactInteractions() {
 
   if (copyEmailBtn) {
     copyEmailBtn.addEventListener('click', () => {
-      const email = 'festus.engineering@example.com';
+      const email = 'mosudimosudi@gmail.com';
       navigator.clipboard.writeText(email).then(() => {
         showToast('Email copied to clipboard: ' + email, 'success');
       }).catch(() => {
